@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+body{
+	background: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section{
+	position: relative;
+	background-color: #fff;
+	border-radius: 12px;
+	width: 600px;
+	height:calc(100vh - 80px);
+	margin:0 28px;
+	padding: 30px;
+	box-shadow: 0px 0px 50px 18px rgba(0, 0, 0, 0.03);
+}
+
+section::before{
+	position: absolute;
+	content: '';
+	width: 600px;
+	height: 26px;
+	top: 174px;
+	left: 0;
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+section::after{
+	position: absolute;
+	content: '';
+	width: 600px;
+	height: 26px;
+	bottom: 30px;
+	left: 0;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+h1{
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+h3{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+h6{
+	font-weight: 300;
+	font-size: 14px;
+	color: #A7A7A7;
+}
+
+p{
+	font-size: 14px;
+	color: #000;
+}
+
+.header{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap:20px;
+}
+
+.logo{
+	width: 60px;
+	height: 60px;
+	border-radius: 12px;
+}
+
+.progress-bar-container{
+	margin:24px 0;
+}
+
+.progress-bar{
+	margin-top: 12px;
+	width: 100%;
+	height:6px;
+	border-radius: 30px;
+	background: #d9d9d9;
+}
+
+.progress-bar .progress{
+	width: 0%;
+	height:6px;
+	border-radius: 30px;
+	background: #13d56b;
+	transition: ease 0.4s;
+}
+
+.checklist-item-container{ /* 216px items above */
+	width: 100%;
+	height: calc(100vh - 296px);
+	overflow-y: auto;
+}
+
+.checklist-item{
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	border-radius: 12px;
+	padding:18px 20px;
+	margin:12px 0;
+}
+
+.checklist-item .item{
+	margin:18px 0;
+	display: flex;
+	justify-content: left;
+	gap:12px;
+}
+
+.checkbox{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #dfdfdf;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.checkbox-active{
+	background-color: #115DFC;
+	border-color: #115DFC;
+}
+
+.text-checked{
+	text-decoration: line-through;
+	color: #A7A7A7;
+}
+
+.ri-check-line{
+	color: #fff;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.button-container{
+	margin:40px 0;
+}
+
+.complete-button{
+	width:160px;
+	height:44px;
+	background-color: #c7c7c7;
+	color: #fff;
+	border-radius: 6px;
+	border: none;
+	font-size: 14px;
+}
+
+.success{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 236px;
+}

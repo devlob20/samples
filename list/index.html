@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>checlist</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<section>
+		<div class="header">
+			<div>
+				<img class="logo" src="img/logo.png" alt="logo">
+			</div>
+			<div>
+				<h1>
+					Email Checklist
+				</h1>
+				<h6>
+					Email Development And Q&A
+				</h6>
+			</div>
+		</div>
+
+		<div class="progress-bar-container">
+			<h3 id="complete-title">
+				&nbsp;
+			</h3>
+			<div class="progress-bar">
+				<div class="progress"></div>
+			</div>
+		</div>
+
+		<div class="checklist-item-container">
+			<div class="checklist-item">
+				<h3>Preliminar</h3>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Images uploaded to s3 or already there</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Template in local</p>
+				</div>
+			</div>
+
+			<div class="checklist-item">
+				<h3>Build</h3>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Pre-Header</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Email copy transfered</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Email copy matches Spreadsheet</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Links working</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Authors match website</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Image alt matches author's name</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">UTM implemented</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Verify utm_content matches</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Check for double && and ?? in UTMs</p>
+				</div>
+			</div>
+
+			<div class="checklist-item">
+				<h3>Preview</h3>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Copy consistency</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Copy spell-check</p>
+				</div>
+			</div>
+
+			<div class="checklist-item">
+				<h3>Delivery</h3>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Airtbale form filled</p>
+				</div>
+				<div class="item">
+					<div class="checkbox"></div>
+					<p class="item-text">Mary has been notified</p>
+				</div>
+			</div>
+
+			<div class="button-container">
+				<button class="complete-button" disabled>Complete this task</button>
+			</div>
+		</div>
+
+	</section>
+	<script src="js/app.js"></script>
+</body>
+</html>
